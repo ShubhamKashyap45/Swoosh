@@ -17,7 +17,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/welcomescreenbg" />
 
     <ImageView
@@ -46,21 +46,23 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="214dp"
-        android:layout_height="31dp"
+        android:layout_width="229dp"
+        android:layout_height="42dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="ON GOING ALL OUT"
         android:textColor="@color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="223dp"
         android:layout_height="41dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="128dp"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center_horizontal"
         android:singleLine="false"
