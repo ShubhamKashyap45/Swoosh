@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -6,6 +8,7 @@ plugins {
 android {
     namespace = "com.example.swoosh"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.example.swoosh"
@@ -30,10 +33,16 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
+
 
 dependencies {
 
